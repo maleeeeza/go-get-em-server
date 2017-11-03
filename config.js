@@ -5,5 +5,5 @@ module.exports = {
         process.env.DATABASE_URL || 'mongodb://localhost/go-get-em',
     TEST_DATABASE_URL:
         process.env.TEST_DATABASE_URL ||
-        'mongodb://localhost/thinkful-go-get-em'
+        'mongodb://localhost/go-get-em'
 };
