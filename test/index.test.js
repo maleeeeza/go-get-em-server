@@ -20,16 +20,17 @@ process.stdout.write('\x1Bc\n');
 const expect = chai.expect;
 chai.use(chaiHttp);
 
-before(function() {
-    return dbConnect(TEST_DATABASE_URL);
-});
 
-after(function() {
-    return dbDisconnect();
-});
 
 
 describe('Cats', function() {
+  before(function() {
+      return dbConnect(TEST_DATABASE_URL);
+  });
+
+  after(function() {
+      return dbDisconnect();
+  });
 
 
   it('should list cats on GET', function() {
