@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: GgL/URND7DHZsXf58ZbAfzL3BdJaWRIOt1y1Q8rC4QrOyyW0ic2TDY+FlI/l4IO3rvksiF84idlHTACQmHAEjf8HTLoMF/U26iYhF23GAbM4+7OurvyhPhzr+EBxOxpHpW6RJCGXqfyB6uw43uukA/+VjWoFim6TgJJhGjAyAPjc3uFbLyC/q7nAEG3LYgx4Bwd/nOtYRWWVsqpfLlodxdWoxGVmHT0Wzw5+sfMvMZBg0CBt429FeqamrMkIxXdn1cwHimuScp4Z2gAUckiKvgWQfl4qPx7tgpgCgUcOFVpEkOZr2RnFOi8e4FsGM2h+9I0mlz6jN/A8HK6hHTr9DcMdkWScRsS1hChCH7TFfCR/c8amQldguUk/O/OGQe4PyF5W1ePHKC3KoVRHYTrHc+uhBRErrz6Cos0PwtIyCVlGinXewr8Ij/8HAmJLXtqbudDdTRbwf9RsA+W74i76Rqd8bQXS7A21jNvWzDKpSdrMyY55XUEhOJn9eluZhFjcOhjFOBfZikwLvoAK3gK3aKmn96YgTW9FqeWOiz8cBcP+PGPSi1ZCZ2AnEOyBi2WL8Cb2B2QYQW+jGGiiSQq7ZvL5h6lIFsoYVwuJyn36RQhCB7FhY/AAlABVueEVVyrDwbw61WRVvjY2AI2i+ACHGwwmCoKf2C9owaX1C0Iy2nA=
+  app: https://go-get-em-server.herokuapp.com
+  on:
+    repo: maleeeeza/go-get-em-server
