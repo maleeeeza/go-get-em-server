@@ -3,7 +3,6 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const should = chai.should();
-
 const {app} = require('../index')
 
 const {TEST_DATABASE_URL} = require('../config');
