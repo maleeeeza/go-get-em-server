@@ -20,6 +20,15 @@ app.use(
     })
 );
 
+app.get('/api/cat', (req, res, next) => {
+  return res.json({
+    id: 'alsdkfjalsdkfj',
+    imageURL:
+      'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg',
+    name: 'Fluffy'
+  });
+});
+
 function runServer(port = PORT) {
     const server = app
         .listen(port, () => {
